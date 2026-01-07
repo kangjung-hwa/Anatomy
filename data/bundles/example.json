@@ -1,25 +1,8 @@
 {
-  "id": "sample.bundle",
-  "title": "Sample Bundle",
-  "category": "Examples",
-  "description": "Reference payload to validate the JSON schema pipeline.",
-  "updatedAt": "2024-12-01T12:00:00Z",
-  "items": [
-    {
-      "title": "Welcome",
-      "body": "This is a sample bundle item used for validation.",
-      "tags": [
-        "sample",
-        "bundle"
-      ]
-    },
-    {
-      "title": "Second Item",
-      "body": "Bundles can have multiple entries with shared tags.",
-      "tags": [
-        "bundle",
-        "content"
-      ]
-    }
-  ]
+  "bundle_id": "example_bundle_v1",
+  "bundle_type": "anatomy_entities",
+  "version": "1.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2026-01-07T00:00:00Z",
+  "entities": []
 }
