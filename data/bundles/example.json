@@ -1,0 +1,25 @@
+{
+  "id": "sample.bundle",
+  "title": "Sample Bundle",
+  "category": "Examples",
+  "description": "Reference payload to validate the JSON schema pipeline.",
+  "updatedAt": "2024-12-01T12:00:00Z",
+  "items": [
+    {
+      "title": "Welcome",
+      "body": "This is a sample bundle item used for validation.",
+      "tags": [
+        "sample",
+        "bundle"
+      ]
+    },
+    {
+      "title": "Second Item",
+      "body": "Bundles can have multiple entries with shared tags.",
+      "tags": [
+        "bundle",
+        "content"
+      ]
+    }
+  ]
+}
