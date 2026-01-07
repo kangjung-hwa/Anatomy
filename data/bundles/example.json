@@ -1,0 +1,8 @@
+{
+  "bundle_id": "example_bundle_v1",
+  "bundle_type": "anatomy_entities",
+  "version": "1.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2026-01-07T00:00:00Z",
+  "entities": []
+}
