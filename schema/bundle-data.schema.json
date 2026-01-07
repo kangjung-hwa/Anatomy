@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/bundle-data.schema.json",
+  "title": "AnatomyBundle",
+  "description": "Schema for bundled anatomy payloads distributed with the app",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/anatomy_entities_bundle" },
+    { "$ref": "#/$defs/anatomy_3d_index_bundle" },
+    { "$ref": "#/$defs/anatomy_study_notes_bundle" }
+  ],
+  "$defs": {
+    "bundle_base": {
+      "type": "object",
+      "required": ["bundle_id", "bundle_type", "version", "locale", "generated_at"],
+      "properties": {
+        "bundle_id": {
+          "description": "Stable identifier for the bundle",
+          "type": "string",
+          "minLength": 1
+        },
+        "bundle_type": {
+          "description": "Bundle payload type",
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "description": "Semantic version for the bundle",
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "description": "Locale of the bundle payload",
+          "type": "string",
+          "minLength": 1
+        },
+        "generated_at": {
+          "description": "Bundle generation timestamp (ISO-8601)",
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "anatomy_entities_bundle": {
+      "allOf": [
+        { "$ref": "#/$defs/bundle_base" },
+        {
+          "type": "object",
+          "required": ["bundle_type", "entities"],
+          "properties": {
+            "bundle_type": { "const": "anatomy_entities" },
+            "entities": {
+              "description": "Anatomy entities inside the bundle",
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/entity" }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "anatomy_3d_index_bundle": {
+      "allOf": [
+        { "$ref": "#/$defs/bundle_base" },
+        {
+          "type": "object",
+          "required": ["bundle_type", "entities"],
+          "properties": {
+            "bundle_type": { "const": "anatomy_3d_index" },
+            "entities": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/anatomy_3d_entity" }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "anatomy_study_notes_bundle": {
+      "allOf": [
+        { "$ref": "#/$defs/bundle_base" },
+        {
+          "type": "object",
+          "required": ["bundle_type", "notes"],
+          "properties": {
+            "bundle_type": { "const": "anatomy_study_notes" },
+            "notes": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/study_note" }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "localized_text": {
+      "type": "object",
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": { "type": "string" },
+        "en": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "aliases": {
+      "type": "object",
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "en": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    },
+    "mesh": {
+      "type": "object",
+      "required": ["file", "format"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "format": { "type": "string", "enum": ["usdz", "gltf"] },
+        "scale": { "type": "number", "minimum": 0 },
+        "pivot": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "additionalProperties": false
+    },
+    "hierarchy": {
+      "type": "object",
+      "properties": {
+        "parent_id": { "type": "string", "minLength": 1 },
+        "children_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "relations": {
+      "type": "object",
+      "properties": {
+        "origin": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "insertion": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "innervated_by": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "supplied_by": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "adjacent_to": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": false
+    },
+    "source_attribution": {
+      "type": "object",
+      "required": ["title", "project", "license", "attribution"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "project": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "attribution": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "anatomy_3d_entity": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "layer",
+        "name",
+        "aliases",
+        "mesh",
+        "source"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "bone",
+            "muscle",
+            "nerve",
+            "artery",
+            "vein",
+            "organ",
+            "skin",
+            "fascia",
+            "joint",
+            "ligament"
+          ]
+        },
+        "layer": {
+          "type": "string",
+          "enum": [
+            "skin",
+            "fascia",
+            "muscle",
+            "nerve",
+            "artery",
+            "vein",
+            "bone",
+            "organ",
+            "joint",
+            "ligament"
+          ]
+        },
+        "name": { "$ref": "#/$defs/localized_text" },
+        "aliases": { "$ref": "#/$defs/aliases" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "default": []
+        },
+        "mesh": { "$ref": "#/$defs/mesh" },
+        "hierarchy": { "$ref": "#/$defs/hierarchy" },
+        "relations": { "$ref": "#/$defs/relations" },
+        "source": { "$ref": "#/$defs/source_attribution" }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "type"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["textbook", "paper", "website"] },
+        "edition": { "type": "string" },
+        "year": { "type": "integer", "minimum": 0 },
+        "note": { "type": "string" },
+        "source_page": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entity_base": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "aliases",
+        "region",
+        "tags",
+        "sources",
+        "confidence",
+        "review_status",
+        "last_reviewed_at"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": ["muscle", "bone", "nerve", "joint", "ligament", "vessel"]
+        },
+        "name": { "$ref": "#/$defs/localized_text" },
+        "aliases": { "$ref": "#/$defs/aliases" },
+        "region": {
+          "type": "string",
+          "enum": ["head_neck", "trunk", "upper_limb", "lower_limb"]
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "default": []
+        },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source" },
+          "minItems": 1
+        },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "review_status": { "type": "string", "enum": ["draft", "reviewed", "verified"] },
+        "last_reviewed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "attachment_point": {
+      "type": "object",
+      "required": ["bone", "landmark"],
+      "properties": {
+        "bone": { "type": "string", "minLength": 1 },
+        "landmark": { "$ref": "#/$defs/localized_text" }
+      },
+      "additionalProperties": false
+    },
+    "action": {
+      "type": "object",
+      "required": ["joint", "movement", "plane"],
+      "properties": {
+        "joint": { "type": "string", "minLength": 1 },
+        "movement": { "$ref": "#/$defs/localized_text" },
+        "plane": {
+          "type": "string",
+          "enum": ["sagittal", "frontal", "transverse", "multi"]
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "nerve_ref": {
+      "type": "object",
+      "required": ["nerve", "roots"],
+      "properties": {
+        "nerve": { "type": "string", "minLength": 1 },
+        "roots": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entity_ref": {
+      "type": "object",
+      "required": ["entity"],
+      "properties": {
+        "entity": { "type": "string", "minLength": 1 },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "muscle": {
+      "allOf": [
+        { "$ref": "#/$defs/entity_base" },
+        {
+          "type": "object",
+          "required": ["origin", "insertion", "actions", "innervation"],
+          "properties": {
+            "origin": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/attachment_point" },
+              "minItems": 1
+            },
+            "insertion": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/attachment_point" },
+              "minItems": 1
+            },
+            "actions": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/action" },
+              "minItems": 1
+            },
+            "innervation": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/nerve_ref" },
+              "minItems": 1
+            },
+            "blood_supply": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "synergists": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "antagonists": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "clinical_notes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "entity": {
+      "allOf": [
+        { "$ref": "#/$defs/entity_base" },
+        {
+          "if": {
+            "properties": { "kind": { "const": "muscle" } }
+          },
+          "then": { "$ref": "#/$defs/muscle" }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+    ,
+    "study_note_source": {
+      "type": "object",
+      "required": ["title", "license", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "section": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "study_note": {
+      "type": "object",
+      "required": [
+        "id",
+        "key_entity_id",
+        "summary_ko",
+        "yoga_relevance_ko",
+        "cues_ko",
+        "common_mistakes_ko",
+        "sources"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "key_entity_id": { "type": "string", "minLength": 1 },
+        "summary_ko": { "type": "string", "minLength": 1 },
+        "yoga_relevance_ko": { "type": "string", "minLength": 1 },
+        "cues_ko": { "type": "string", "minLength": 1 },
+        "common_mistakes_ko": { "type": "string", "minLength": 1 },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/study_note_source" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
