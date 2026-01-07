@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/bundle-data.schema.json",
+  "title": "BundleData",
+  "description": "Schema for bundled JSON payloads distributed with the app",
+  "type": "object",
+  "required": ["id", "title", "category", "items"],
+  "properties": {
+    "id": {
+      "description": "Stable identifier for the bundle",
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "description": "Display title for the bundle",
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "description": "Grouping of the bundle for discovery",
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "description": "Optional long-form description",
+      "type": "string"
+    },
+    "updatedAt": {
+      "description": "Last updated timestamp (ISO-8601)",
+      "type": "string",
+      "format": "date-time"
+    },
+    "items": {
+      "description": "Individual pieces of content inside the bundle",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "body"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
