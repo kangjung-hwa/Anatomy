@@ -1,0 +1,156 @@
+{
+  "bundle_id": "upper_limb_muscles_v1",
+  "bundle_type": "anatomy_entities",
+  "version": "1.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2024-12-01T12:00:00Z",
+  "entities": [
+    {
+      "id": "muscle:biceps_brachii",
+      "kind": "muscle",
+      "name": { "ko": "상완이두근", "en": "Biceps brachii" },
+      "aliases": { "ko": ["이두박근"], "en": ["Biceps"] },
+      "region": "upper_limb",
+      "tags": ["flexion", "upper arm"],
+      "sources": [
+        {
+          "title": "Gray's Anatomy for Students",
+          "type": "textbook",
+          "edition": "4th",
+          "year": 2019,
+          "source_page": "534"
+        }
+      ],
+      "confidence": 0.9,
+      "review_status": "reviewed",
+      "last_reviewed_at": "2024-11-20T09:00:00Z",
+      "origin": [
+        {
+          "bone": "bone:scapula",
+          "landmark": { "ko": "오훼돌기/관절상결절", "en": "Coracoid process/supraglenoid tubercle" }
+        }
+      ],
+      "insertion": [
+        {
+          "bone": "bone:radius",
+          "landmark": { "ko": "요골결절", "en": "Radial tuberosity" }
+        }
+      ],
+      "actions": [
+        {
+          "joint": "joint:elbow",
+          "movement": { "ko": "굴곡", "en": "Flexion" },
+          "plane": "sagittal"
+        },
+        {
+          "joint": "joint:radioulnar",
+          "movement": { "ko": "회외", "en": "Supination" },
+          "plane": "transverse"
+        }
+      ],
+      "innervation": [
+        {
+          "nerve": "nerve:musculocutaneous",
+          "roots": ["C5", "C6"],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "muscle:triceps_brachii",
+      "kind": "muscle",
+      "name": { "ko": "상완삼두근", "en": "Triceps brachii" },
+      "aliases": { "ko": [], "en": [] },
+      "region": "upper_limb",
+      "tags": ["extension", "upper arm"],
+      "sources": [
+        {
+          "title": "Gray's Anatomy for Students",
+          "type": "textbook",
+          "edition": "4th",
+          "year": 2019,
+          "source_page": "536"
+        }
+      ],
+      "confidence": 0.88,
+      "review_status": "reviewed",
+      "last_reviewed_at": "2024-11-20T09:00:00Z",
+      "origin": [
+        {
+          "bone": "bone:scapula",
+          "landmark": { "ko": "관절하결절", "en": "Infraglenoid tubercle" }
+        },
+        {
+          "bone": "bone:humerus",
+          "landmark": { "ko": "상완골 후면", "en": "Posterior humerus" }
+        }
+      ],
+      "insertion": [
+        {
+          "bone": "bone:ulna",
+          "landmark": { "ko": "팔꿈치머리", "en": "Olecranon" }
+        }
+      ],
+      "actions": [
+        {
+          "joint": "joint:elbow",
+          "movement": { "ko": "신전", "en": "Extension" },
+          "plane": "sagittal"
+        }
+      ],
+      "innervation": [
+        {
+          "nerve": "nerve:radial",
+          "roots": ["C6", "C7", "C8"],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "muscle:brachialis",
+      "kind": "muscle",
+      "name": { "ko": "상완근", "en": "Brachialis" },
+      "aliases": { "ko": [], "en": [] },
+      "region": "upper_limb",
+      "tags": ["flexion", "upper arm"],
+      "sources": [
+        {
+          "title": "Moore Clinically Oriented Anatomy",
+          "type": "textbook",
+          "edition": "8th",
+          "year": 2018,
+          "source_page": "742"
+        }
+      ],
+      "confidence": 0.86,
+      "review_status": "reviewed",
+      "last_reviewed_at": "2024-11-20T09:00:00Z",
+      "origin": [
+        {
+          "bone": "bone:humerus",
+          "landmark": { "ko": "상완골 전면 원위부", "en": "Distal anterior humerus" }
+        }
+      ],
+      "insertion": [
+        {
+          "bone": "bone:ulna",
+          "landmark": { "ko": "척골결절", "en": "Ulnar tuberosity" }
+        }
+      ],
+      "actions": [
+        {
+          "joint": "joint:elbow",
+          "movement": { "ko": "굴곡", "en": "Flexion" },
+          "plane": "sagittal"
+        }
+      ],
+      "innervation": [
+        {
+          "nerve": "nerve:musculocutaneous",
+          "roots": ["C5", "C6"],
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
