@@ -1,0 +1,649 @@
+{
+  "bundle_id": "anatomy_study_notes_v2",
+  "bundle_type": "anatomy_study_notes",
+  "version": "2.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2026-01-07T00:00:00Z",
+  "notes": [
+    {
+      "id": "note:bone:pelvis",
+      "key_entity_id": "bone:pelvis",
+      "summary_ko": "골반는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "골반의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "골반 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "골반에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:sacrum",
+      "key_entity_id": "bone:sacrum",
+      "summary_ko": "천골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "천골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "천골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "천골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:ilium",
+      "key_entity_id": "bone:ilium",
+      "summary_ko": "장골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "장골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "장골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "장골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:ischium",
+      "key_entity_id": "bone:ischium",
+      "summary_ko": "좌골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "좌골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "좌골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "좌골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:pubis",
+      "key_entity_id": "bone:pubis",
+      "summary_ko": "치골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "치골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "치골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "치골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:femur",
+      "key_entity_id": "bone:femur",
+      "summary_ko": "대퇴골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "대퇴골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "대퇴골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "대퇴골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_spine",
+      "key_entity_id": "bone:lumbar_spine",
+      "summary_ko": "요추는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_1",
+      "key_entity_id": "bone:lumbar_1",
+      "summary_ko": "요추 1는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 1의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 1 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 1에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_2",
+      "key_entity_id": "bone:lumbar_2",
+      "summary_ko": "요추 2는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 2의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 2 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 2에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_3",
+      "key_entity_id": "bone:lumbar_3",
+      "summary_ko": "요추 3는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 3의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 3 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 3에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_4",
+      "key_entity_id": "bone:lumbar_4",
+      "summary_ko": "요추 4는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 4의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 4 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 4에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:lumbar_5",
+      "key_entity_id": "bone:lumbar_5",
+      "summary_ko": "요추 5는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 5의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 5 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 5에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_1",
+      "key_entity_id": "bone:cervical_1",
+      "summary_ko": "경추 1는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 1의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 1 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 1에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_2",
+      "key_entity_id": "bone:cervical_2",
+      "summary_ko": "경추 2는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 2의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 2 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 2에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_3",
+      "key_entity_id": "bone:cervical_3",
+      "summary_ko": "경추 3는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 3의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 3 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 3에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_4",
+      "key_entity_id": "bone:cervical_4",
+      "summary_ko": "경추 4는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 4의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 4 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 4에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_5",
+      "key_entity_id": "bone:cervical_5",
+      "summary_ko": "경추 5는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 5의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 5 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 5에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_6",
+      "key_entity_id": "bone:cervical_6",
+      "summary_ko": "경추 6는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 6의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 6 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 6에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:cervical_7",
+      "key_entity_id": "bone:cervical_7",
+      "summary_ko": "경추 7는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 7의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 7 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 7에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_1",
+      "key_entity_id": "bone:thoracic_1",
+      "summary_ko": "흉추 1는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 1의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 1 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 1에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_2",
+      "key_entity_id": "bone:thoracic_2",
+      "summary_ko": "흉추 2는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 2의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 2 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 2에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_3",
+      "key_entity_id": "bone:thoracic_3",
+      "summary_ko": "흉추 3는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 3의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 3 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 3에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_4",
+      "key_entity_id": "bone:thoracic_4",
+      "summary_ko": "흉추 4는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 4의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 4 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 4에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_5",
+      "key_entity_id": "bone:thoracic_5",
+      "summary_ko": "흉추 5는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 5의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 5 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 5에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:thoracic_6",
+      "key_entity_id": "bone:thoracic_6",
+      "summary_ko": "흉추 6는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 6의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 6 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 6에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:scapula",
+      "key_entity_id": "bone:scapula",
+      "summary_ko": "견갑골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "견갑골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "견갑골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "견갑골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:humerus",
+      "key_entity_id": "bone:humerus",
+      "summary_ko": "상완골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "상완골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "상완골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "상완골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:bone:clavicle",
+      "key_entity_id": "bone:clavicle",
+      "summary_ko": "쇄골는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "쇄골의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "쇄골 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "쇄골에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:hip",
+      "key_entity_id": "joint:hip",
+      "summary_ko": "고관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "고관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "고관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "고관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:sacroiliac",
+      "key_entity_id": "joint:sacroiliac",
+      "summary_ko": "천장관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "천장관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "천장관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "천장관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:shoulder",
+      "key_entity_id": "joint:shoulder",
+      "summary_ko": "견관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "견관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "견관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "견관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:acromioclavicular",
+      "key_entity_id": "joint:acromioclavicular",
+      "summary_ko": "견봉쇄골관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "견봉쇄골관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "견봉쇄골관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "견봉쇄골관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:sternoclavicular",
+      "key_entity_id": "joint:sternoclavicular",
+      "summary_ko": "흉쇄관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉쇄관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉쇄관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉쇄관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:lumbar_facets",
+      "key_entity_id": "joint:lumbar_facets",
+      "summary_ko": "요추 후관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "요추 후관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "요추 후관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "요추 후관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:cervical_facets",
+      "key_entity_id": "joint:cervical_facets",
+      "summary_ko": "경추 후관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "경추 후관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "경추 후관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "경추 후관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:joint:thoracic_facets",
+      "key_entity_id": "joint:thoracic_facets",
+      "summary_ko": "흉추 후관절는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "흉추 후관절의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "흉추 후관절 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "흉추 후관절에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:muscle:gluteus_medius",
+      "key_entity_id": "muscle:gluteus_medius",
+      "summary_ko": "중둔근는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "중둔근의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "중둔근 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "중둔근에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:muscle:gluteus_maximus",
+      "key_entity_id": "muscle:gluteus_maximus",
+      "summary_ko": "대둔근는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "대둔근의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "대둔근 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "대둔근에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:muscle:gluteus_minimus",
+      "key_entity_id": "muscle:gluteus_minimus",
+      "summary_ko": "소둔근는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "소둔근의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "소둔근 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "소둔근에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    },
+    {
+      "id": "note:muscle:psoas_major",
+      "key_entity_id": "muscle:psoas_major",
+      "summary_ko": "대요근는 요가 정렬과 안정성에 중요한 구조물이다.",
+      "yoga_relevance_ko": "대요근의 위치를 이해하면 자세에서 안정성과 가동성을 조절할 수 있다.",
+      "cues_ko": "대요근 주변을 부드럽게 지지하며 호흡을 유지한다.",
+      "common_mistakes_ko": "대요근에 과도한 힘이 집중되어 정렬이 무너지는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9"
+        }
+      ]
+    }
+  ]
+}
