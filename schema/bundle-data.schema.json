@@ -1,62 +1,237 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/schemas/bundle-data.schema.json",
-  "title": "BundleData",
-  "description": "Schema for bundled JSON payloads distributed with the app",
+  "title": "AnatomyBundle",
+  "description": "Schema for bundled anatomy entity payloads distributed with the app",
   "type": "object",
-  "required": ["id", "title", "category", "items"],
+  "required": [
+    "bundle_id",
+    "bundle_type",
+    "version",
+    "locale",
+    "generated_at",
+    "entities"
+  ],
   "properties": {
-    "id": {
+    "bundle_id": {
       "description": "Stable identifier for the bundle",
       "type": "string",
       "minLength": 1
     },
-    "title": {
-      "description": "Display title for the bundle",
+    "bundle_type": {
+      "description": "Bundle payload type",
+      "type": "string",
+      "enum": ["anatomy_entities"]
+    },
+    "version": {
+      "description": "Semantic version for the bundle",
       "type": "string",
       "minLength": 1
     },
-    "category": {
-      "description": "Grouping of the bundle for discovery",
+    "locale": {
+      "description": "Locale of the bundle payload",
       "type": "string",
       "minLength": 1
     },
-    "description": {
-      "description": "Optional long-form description",
-      "type": "string"
-    },
-    "updatedAt": {
-      "description": "Last updated timestamp (ISO-8601)",
+    "generated_at": {
+      "description": "Bundle generation timestamp (ISO-8601)",
       "type": "string",
       "format": "date-time"
     },
-    "items": {
-      "description": "Individual pieces of content inside the bundle",
+    "entities": {
+      "description": "Anatomy entities inside the bundle",
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["title", "body"],
-        "properties": {
-          "title": {
-            "type": "string",
-            "minLength": 1
-          },
-          "body": {
-            "type": "string",
-            "minLength": 1
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "minLength": 1
-            },
-            "uniqueItems": true
-          }
-        },
-        "additionalProperties": false
-      }
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/entity" }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "$defs": {
+    "localized_text": {
+      "type": "object",
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": { "type": "string" },
+        "en": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "aliases": {
+      "type": "object",
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "en": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "type"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["textbook", "paper", "website"] },
+        "edition": { "type": "string" },
+        "year": { "type": "integer", "minimum": 0 },
+        "note": { "type": "string" },
+        "source_page": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entity_base": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "aliases",
+        "region",
+        "tags",
+        "sources",
+        "confidence",
+        "review_status",
+        "last_reviewed_at"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": ["muscle", "bone", "nerve", "joint", "ligament", "vessel"]
+        },
+        "name": { "$ref": "#/$defs/localized_text" },
+        "aliases": { "$ref": "#/$defs/aliases" },
+        "region": {
+          "type": "string",
+          "enum": ["head_neck", "trunk", "upper_limb", "lower_limb"]
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "default": []
+        },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source" },
+          "minItems": 1
+        },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "review_status": { "type": "string", "enum": ["draft", "reviewed", "verified"] },
+        "last_reviewed_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "attachment_point": {
+      "type": "object",
+      "required": ["bone", "landmark"],
+      "properties": {
+        "bone": { "type": "string", "minLength": 1 },
+        "landmark": { "$ref": "#/$defs/localized_text" }
+      },
+      "additionalProperties": false
+    },
+    "action": {
+      "type": "object",
+      "required": ["joint", "movement", "plane"],
+      "properties": {
+        "joint": { "type": "string", "minLength": 1 },
+        "movement": { "$ref": "#/$defs/localized_text" },
+        "plane": {
+          "type": "string",
+          "enum": ["sagittal", "frontal", "transverse", "multi"]
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "nerve_ref": {
+      "type": "object",
+      "required": ["nerve", "roots"],
+      "properties": {
+        "nerve": { "type": "string", "minLength": 1 },
+        "roots": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entity_ref": {
+      "type": "object",
+      "required": ["entity"],
+      "properties": {
+        "entity": { "type": "string", "minLength": 1 },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "muscle": {
+      "allOf": [
+        { "$ref": "#/$defs/entity_base" },
+        {
+          "type": "object",
+          "required": ["origin", "insertion", "actions", "innervation"],
+          "properties": {
+            "origin": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/attachment_point" },
+              "minItems": 1
+            },
+            "insertion": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/attachment_point" },
+              "minItems": 1
+            },
+            "actions": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/action" },
+              "minItems": 1
+            },
+            "innervation": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/nerve_ref" },
+              "minItems": 1
+            },
+            "blood_supply": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "synergists": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "antagonists": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/entity_ref" }
+            },
+            "clinical_notes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "entity": {
+      "allOf": [
+        { "$ref": "#/$defs/entity_base" },
+        {
+          "if": {
+            "properties": { "kind": { "const": "muscle" } }
+          },
+          "then": { "$ref": "#/$defs/muscle" }
+        }
+      ]
+    }
+  }
 }
