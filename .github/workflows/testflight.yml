@@ -1,0 +1,140 @@
+name: TestFlight Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: 'Xcode configuration to archive'
+        required: false
+        default: 'Release'
+      scheme:
+        description: 'Scheme to archive'
+        required: false
+        default: 'Anatomy'
+      workspace:
+        description: 'Xcode workspace path (preferred)'
+        required: false
+        default: 'Anatomy.xcworkspace'
+      project:
+        description: 'Xcode project path (used if workspace missing)'
+        required: false
+        default: 'Anatomy.xcodeproj'
+      destination:
+        description: 'Destination for archive (simulator or device)'
+        required: false
+        default: 'generic/platform=iOS'
+
+jobs:
+  distribute:
+    runs-on: macos-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      APP_STORE_CONNECT_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
+      APP_STORE_CONNECT_TEAM_ID: ${{ secrets.APP_STORE_CONNECT_TEAM_ID }}
+      BUNDLE_ID: ${{ secrets.APP_BUNDLE_ID }}
+      SIGNING_CERTIFICATE: ${{ secrets.SIGNING_CERTIFICATE }}
+      PROVISIONING_PROFILE_SPECIFIER: ${{ secrets.PROVISIONING_PROFILE_SPECIFIER }}
+      EXPORT_METHOD: app-store
+      ARCHIVE_PATH: ${{ github.workspace }}/build/Anatomy.xcarchive
+      EXPORT_PATH: ${{ github.workspace }}/build/export
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Install xcpretty
+        run: sudo gem install xcpretty --no-document
+
+      - name: Prepare build key
+        env:
+          KEY_PATH: ${{ github.workspace }}/AuthKey_${{ secrets.APP_STORE_CONNECT_KEY_ID }}.p8
+        run: |
+          set -euo pipefail
+          if [[ -z "${APP_STORE_CONNECT_PRIVATE_KEY}" || -z "${APP_STORE_CONNECT_KEY_ID}" || -z "${APP_STORE_CONNECT_ISSUER_ID}" ]]; then
+            echo "::error ::App Store Connect API key secrets are missing."
+            exit 1
+          fi
+          echo "${APP_STORE_CONNECT_PRIVATE_KEY}" > "${KEY_PATH}"
+          echo "KEY_PATH=${KEY_PATH}" >> $GITHUB_ENV
+
+      - name: Archive
+        env:
+          XCODE_WORKSPACE: ${{ github.event.inputs.workspace }}
+          XCODE_PROJECT: ${{ github.event.inputs.project }}
+          XCODE_SCHEME: ${{ github.event.inputs.scheme }}
+          XCODE_CONFIGURATION: ${{ github.event.inputs.configuration }}
+          XCODE_DESTINATION: ${{ github.event.inputs.destination }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$(dirname "${ARCHIVE_PATH}")"
+          if [[ -n "${XCODE_WORKSPACE}" && -f "${XCODE_WORKSPACE}" ]]; then
+            PROJECT_FLAG=(-workspace "${XCODE_WORKSPACE}")
+          elif [[ -n "${XCODE_PROJECT}" && -f "${XCODE_PROJECT}" ]]; then
+            PROJECT_FLAG=(-project "${XCODE_PROJECT}")
+          else
+            echo "::error ::No Xcode workspace or project found. Provide workspace/project as workflow inputs."
+            exit 1
+          fi
+
+          xcodebuild \
+            "${PROJECT_FLAG[@]}" \
+            -scheme "${XCODE_SCHEME}" \
+            -configuration "${XCODE_CONFIGURATION}" \
+            -destination "${XCODE_DESTINATION}" \
+            -archivePath "${ARCHIVE_PATH}" \
+            -allowProvisioningUpdates \
+            archive | xcpretty
+
+      - name: Export and upload to TestFlight
+        env:
+          XCODE_SCHEME: ${{ github.event.inputs.scheme }}
+          EXPORT_OPTIONS_PATH: ${{ github.workspace }}/ExportOptions.plist
+          KEY_PATH: ${{ env.KEY_PATH }}
+        run: |
+          set -euo pipefail
+          mkdir -p "${EXPORT_PATH}"
+          cat > "${EXPORT_OPTIONS_PATH}" <<'PLIST'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>${EXPORT_METHOD}</string>
+            <key>uploadBitcode</key><false/>
+            <key>uploadSymbols</key><true/>
+            <key>signingStyle</key><string>manual</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>${BUNDLE_ID}</key><string>${PROVISIONING_PROFILE_SPECIFIER}</string>
+            </dict>
+            <key>destination</key><string>export</string>
+            <key>manageAppVersionAndBuildNumber</key><true/>
+            <key>compileBitcode</key><false/>
+            <key>authenticationKeyPath</key><string>${KEY_PATH}</string>
+            <key>authenticationKeyID</key><string>${APP_STORE_CONNECT_KEY_ID}</string>
+            <key>authenticationKeyIssuerID</key><string>${APP_STORE_CONNECT_ISSUER_ID}</string>
+            <key>teamID</key><string>${APP_STORE_CONNECT_TEAM_ID}</string>
+          </dict>
+          </plist>
+          PLIST
+
+          xcodebuild -exportArchive \
+            -archivePath "${ARCHIVE_PATH}" \
+            -exportOptionsPlist "${EXPORT_OPTIONS_PATH}" \
+            -exportPath "${EXPORT_PATH}" \
+            -allowProvisioningUpdates | xcpretty
+
+          echo "Exported IPA contents:" && ls -la "${EXPORT_PATH}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: testflight-build
+          path: |
+            ${{ env.EXPORT_PATH }}
+            ${{ env.ARCHIVE_PATH }}
+          if-no-files-found: error
