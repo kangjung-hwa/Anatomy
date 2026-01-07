@@ -9,14 +9,42 @@
       "id": "bone:pelvis",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "골반", "en": "Pelvis" },
-      "aliases": { "ko": ["골반뼈"], "en": ["Pelvic girdle"] },
-      "tags": ["hip", "core"],
-      "mesh": { "file": "pelvis.usdz", "format": "usdz" },
-      "hierarchy": { "children_ids": ["bone:sacrum", "bone:ilium", "bone:ischium", "bone:pubis"] },
-      "relations": { "adjacent_to": ["joint:sacroiliac", "joint:hip"] },
+      "name": {
+        "ko": "골반",
+        "en": "Pelvis"
+      },
+      "aliases": {
+        "ko": [
+          "골반뼈"
+        ],
+        "en": [
+          "Pelvic girdle"
+        ]
+      },
+      "tags": [
+        "hip",
+        "core"
+      ],
+      "mesh": {
+        "file": "pelvis.usdz",
+        "format": "usdz"
+      },
+      "hierarchy": {
+        "children_ids": [
+          "bone:sacrum",
+          "bone:ilium",
+          "bone:ischium",
+          "bone:pubis"
+        ]
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:sacroiliac",
+          "joint:hip"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Pelvis",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -27,14 +55,32 @@
       "id": "bone:sacrum",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "천골", "en": "Sacrum" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["spine"],
-      "mesh": { "file": "sacrum.usdz", "format": "usdz" },
-      "hierarchy": { "parent_id": "bone:pelvis" },
-      "relations": { "adjacent_to": ["joint:sacroiliac", "bone:lumbar_spine"] },
+      "name": {
+        "ko": "천골",
+        "en": "Sacrum"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "sacrum.usdz",
+        "format": "usdz"
+      },
+      "hierarchy": {
+        "parent_id": "bone:pelvis"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:sacroiliac",
+          "bone:lumbar_spine"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Sacrum",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -45,14 +91,31 @@
       "id": "bone:ilium",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "장골", "en": "Ilium" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip"],
-      "mesh": { "file": "ilium.usdz", "format": "usdz" },
-      "hierarchy": { "parent_id": "bone:pelvis" },
-      "relations": { "adjacent_to": ["joint:hip"] },
+      "name": {
+        "ko": "장골",
+        "en": "Ilium"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "ilium.usdz",
+        "format": "usdz"
+      },
+      "hierarchy": {
+        "parent_id": "bone:pelvis"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:hip"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Ilium",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -63,14 +126,31 @@
       "id": "bone:ischium",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "좌골", "en": "Ischium" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip"],
-      "mesh": { "file": "ischium.usdz", "format": "usdz" },
-      "hierarchy": { "parent_id": "bone:pelvis" },
-      "relations": { "adjacent_to": ["joint:hip"] },
+      "name": {
+        "ko": "좌골",
+        "en": "Ischium"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "ischium.usdz",
+        "format": "usdz"
+      },
+      "hierarchy": {
+        "parent_id": "bone:pelvis"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:hip"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Ischium",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -81,14 +161,64 @@
       "id": "bone:pubis",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "치골", "en": "Pubis" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip"],
-      "mesh": { "file": "pubis.usdz", "format": "usdz" },
-      "hierarchy": { "parent_id": "bone:pelvis" },
-      "relations": { "adjacent_to": ["joint:hip"] },
+      "name": {
+        "ko": "치골",
+        "en": "Pubis"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "pubis.usdz",
+        "format": "usdz"
+      },
+      "hierarchy": {
+        "parent_id": "bone:pelvis"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:hip"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Pubis",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:femur",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "대퇴골",
+        "en": "Femur"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "leg"
+      ],
+      "mesh": {
+        "file": "femur.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:hip"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -99,13 +229,29 @@
       "id": "bone:lumbar_spine",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "요추", "en": "Lumbar Spine" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["spine"],
-      "mesh": { "file": "lumbar_spine.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:sacrum", "joint:lumbar_facets"] },
+      "name": {
+        "ko": "요추",
+        "en": "Lumbar Spine"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_spine.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:sacrum",
+          "joint:lumbar_facets"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Lumbar Spine",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -113,16 +259,31 @@
       }
     },
     {
-      "id": "joint:hip",
-      "kind": "joint",
-      "layer": "joint",
-      "name": { "ko": "고관절", "en": "Hip Joint" },
-      "aliases": { "ko": ["엉덩관절"], "en": ["Coxal joint"] },
-      "tags": ["hip", "mobility"],
-      "mesh": { "file": "hip_joint.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:ilium", "bone:ischium", "bone:pubis"] },
+      "id": "bone:lumbar_1",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "요추 1",
+        "en": "Lumbar vertebra 1"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_1.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:lumbar_facets"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Hip Joint",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -130,16 +291,31 @@
       }
     },
     {
-      "id": "joint:sacroiliac",
-      "kind": "joint",
-      "layer": "joint",
-      "name": { "ko": "천장관절", "en": "Sacroiliac Joint" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["pelvis"],
-      "mesh": { "file": "sacroiliac_joint.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:sacrum", "bone:ilium"] },
+      "id": "bone:lumbar_2",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "요추 2",
+        "en": "Lumbar vertebra 2"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_2.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:lumbar_facets"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy SI Joint",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -147,16 +323,511 @@
       }
     },
     {
-      "id": "joint:shoulder",
-      "kind": "joint",
-      "layer": "joint",
-      "name": { "ko": "견관절", "en": "Shoulder Joint" },
-      "aliases": { "ko": ["어깨관절"], "en": ["Glenohumeral joint"] },
-      "tags": ["shoulder"],
-      "mesh": { "file": "shoulder_joint.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:scapula", "bone:humerus"] },
+      "id": "bone:lumbar_3",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "요추 3",
+        "en": "Lumbar vertebra 3"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_3.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:lumbar_facets"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Shoulder Joint",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:lumbar_4",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "요추 4",
+        "en": "Lumbar vertebra 4"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_4.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:lumbar_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:lumbar_5",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "요추 5",
+        "en": "Lumbar vertebra 5"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_5.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:lumbar_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_1",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 1",
+        "en": "Cervical vertebra 1"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_1.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_2",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 2",
+        "en": "Cervical vertebra 2"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_2.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_3",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 3",
+        "en": "Cervical vertebra 3"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_3.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_4",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 4",
+        "en": "Cervical vertebra 4"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_4.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_5",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 5",
+        "en": "Cervical vertebra 5"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_5.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_6",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 6",
+        "en": "Cervical vertebra 6"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_6.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:cervical_7",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "경추 7",
+        "en": "Cervical vertebra 7"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_7.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:cervical_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_1",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 1",
+        "en": "Thoracic vertebra 1"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_1.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_2",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 2",
+        "en": "Thoracic vertebra 2"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_2.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_3",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 3",
+        "en": "Thoracic vertebra 3"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_3.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_4",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 4",
+        "en": "Thoracic vertebra 4"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_4.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_5",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 5",
+        "en": "Thoracic vertebra 5"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_5.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:thoracic_6",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "흉추 6",
+        "en": "Thoracic vertebra 6"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_6.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -167,13 +838,28 @@
       "id": "bone:scapula",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "견갑골", "en": "Scapula" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder"],
-      "mesh": { "file": "scapula.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["joint:shoulder"] },
+      "name": {
+        "ko": "견갑골",
+        "en": "Scapula"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "scapula.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:shoulder"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Scapula",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -184,13 +870,333 @@
       "id": "bone:humerus",
       "kind": "bone",
       "layer": "bone",
-      "name": { "ko": "상완골", "en": "Humerus" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder", "arm"],
-      "mesh": { "file": "humerus.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["joint:shoulder"] },
+      "name": {
+        "ko": "상완골",
+        "en": "Humerus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder",
+        "arm"
+      ],
+      "mesh": {
+        "file": "humerus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:shoulder"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Humerus",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:clavicle",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "쇄골",
+        "en": "Clavicle"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "clavicle.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:acromioclavicular",
+          "joint:sternoclavicular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:hip",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "고관절",
+        "en": "Hip Joint"
+      },
+      "aliases": {
+        "ko": [
+          "엉덩관절"
+        ],
+        "en": [
+          "Coxal joint"
+        ]
+      },
+      "tags": [
+        "hip",
+        "mobility"
+      ],
+      "mesh": {
+        "file": "hip.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:ilium",
+          "bone:ischium",
+          "bone:pubis",
+          "bone:femur"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:sacroiliac",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "천장관절",
+        "en": "Sacroiliac Joint"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "pelvis"
+      ],
+      "mesh": {
+        "file": "sacroiliac.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:sacrum",
+          "bone:ilium"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:shoulder",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "견관절",
+        "en": "Shoulder Joint"
+      },
+      "aliases": {
+        "ko": [
+          "어깨관절"
+        ],
+        "en": [
+          "Glenohumeral joint"
+        ]
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "shoulder.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:scapula",
+          "bone:humerus"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:acromioclavicular",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "견봉쇄골관절",
+        "en": "Acromioclavicular Joint"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "acromioclavicular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:scapula",
+          "bone:clavicle"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:sternoclavicular",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "흉쇄관절",
+        "en": "Sternoclavicular Joint"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "sternoclavicular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:clavicle"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:lumbar_facets",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "요추 후관절",
+        "en": "Lumbar facet joints"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_facets.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:lumbar_spine"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:cervical_facets",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "경추 후관절",
+        "en": "Cervical facet joints"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "cervical_facets.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:cervical_1"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:thoracic_facets",
+      "kind": "joint",
+      "layer": "joint",
+      "name": {
+        "ko": "흉추 후관절",
+        "en": "Thoracic facet joints"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "thoracic_facets.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:thoracic_1"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -201,17 +1207,35 @@
       "id": "muscle:gluteus_medius",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "중둔근", "en": "Gluteus medius" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "stability"],
-      "mesh": { "file": "gluteus_medius.usdz", "format": "usdz" },
+      "name": {
+        "ko": "중둔근",
+        "en": "Gluteus medius"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "stability"
+      ],
+      "mesh": {
+        "file": "gluteus_medius.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:ilium"],
-        "insertion": ["bone:femur"],
-        "innervated_by": ["nerve:superior_gluteal"]
+        "origin": [
+          "bone:ilium"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:superior_gluteal"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Gluteus Medius",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -222,17 +1246,75 @@
       "id": "muscle:gluteus_maximus",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "대둔근", "en": "Gluteus maximus" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "extension"],
-      "mesh": { "file": "gluteus_maximus.usdz", "format": "usdz" },
+      "name": {
+        "ko": "대둔근",
+        "en": "Gluteus maximus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "extension"
+      ],
+      "mesh": {
+        "file": "gluteus_maximus.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:ilium", "bone:sacrum"],
-        "insertion": ["bone:femur"],
-        "innervated_by": ["nerve:inferior_gluteal"]
+        "origin": [
+          "bone:ilium",
+          "bone:sacrum"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:inferior_gluteal"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Gluteus Maximus",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:gluteus_minimus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "소둔근",
+        "en": "Gluteus minimus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "stability"
+      ],
+      "mesh": {
+        "file": "gluteus_minimus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:ilium"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:superior_gluteal"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -243,17 +1325,35 @@
       "id": "muscle:psoas_major",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "대요근", "en": "Psoas major" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "flexion"],
-      "mesh": { "file": "psoas_major.usdz", "format": "usdz" },
+      "name": {
+        "ko": "대요근",
+        "en": "Psoas major"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "flexion"
+      ],
+      "mesh": {
+        "file": "psoas_major.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:lumbar_spine"],
-        "insertion": ["bone:femur"],
-        "innervated_by": ["nerve:femoral"]
+        "origin": [
+          "bone:lumbar_spine"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:femoral"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Psoas Major",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -264,17 +1364,35 @@
       "id": "muscle:iliacus",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "장요근(장골근)", "en": "Iliacus" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "flexion"],
-      "mesh": { "file": "iliacus.usdz", "format": "usdz" },
+      "name": {
+        "ko": "장골근",
+        "en": "Iliacus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "flexion"
+      ],
+      "mesh": {
+        "file": "iliacus.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:ilium"],
-        "insertion": ["bone:femur"],
-        "innervated_by": ["nerve:femoral"]
+        "origin": [
+          "bone:ilium"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:femoral"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Iliacus",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -285,17 +1403,35 @@
       "id": "muscle:piriformis",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "이상근", "en": "Piriformis" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "rotation"],
-      "mesh": { "file": "piriformis.usdz", "format": "usdz" },
+      "name": {
+        "ko": "이상근",
+        "en": "Piriformis"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "rotation"
+      ],
+      "mesh": {
+        "file": "piriformis.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:sacrum"],
-        "insertion": ["bone:femur"],
-        "innervated_by": ["nerve:sacral_plexus"]
+        "origin": [
+          "bone:sacrum"
+        ],
+        "insertion": [
+          "bone:femur"
+        ],
+        "innervated_by": [
+          "nerve:sacral_plexus"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Piriformis",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -303,20 +1439,114 @@
       }
     },
     {
-      "id": "muscle:rotator_cuff",
+      "id": "muscle:quadratus_lumborum",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "회전근개", "en": "Rotator cuff" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder", "stability"],
-      "mesh": { "file": "rotator_cuff.usdz", "format": "usdz" },
+      "name": {
+        "ko": "요방형근",
+        "en": "Quadratus lumborum"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine",
+        "stability"
+      ],
+      "mesh": {
+        "file": "quadratus_lumborum.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:scapula"],
-        "insertion": ["bone:humerus"],
-        "innervated_by": ["nerve:suprascapular"]
+        "origin": [
+          "bone:ilium"
+        ],
+        "insertion": [
+          "bone:lumbar_spine"
+        ],
+        "innervated_by": [
+          "nerve:lumbar_plexus"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Rotator Cuff",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:erector_spinae",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "척추기립근",
+        "en": "Erector spinae"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "erector_spinae.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:sacrum"
+        ],
+        "insertion": [
+          "bone:lumbar_spine"
+        ],
+        "innervated_by": [
+          "nerve:dorsal_rami"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:multifidus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "다열근",
+        "en": "Multifidus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "multifidus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:sacrum"
+        ],
+        "insertion": [
+          "bone:lumbar_spine"
+        ],
+        "innervated_by": [
+          "nerve:dorsal_rami"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -327,17 +1557,452 @@
       "id": "muscle:deltoid",
       "kind": "muscle",
       "layer": "muscle",
-      "name": { "ko": "삼각근", "en": "Deltoid" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder", "abduction"],
-      "mesh": { "file": "deltoid.usdz", "format": "usdz" },
+      "name": {
+        "ko": "삼각근",
+        "en": "Deltoid"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder",
+        "abduction"
+      ],
+      "mesh": {
+        "file": "deltoid.usdz",
+        "format": "usdz"
+      },
       "relations": {
-        "origin": ["bone:scapula"],
-        "insertion": ["bone:humerus"],
-        "innervated_by": ["nerve:axillary"]
+        "origin": [
+          "bone:clavicle",
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:axillary"
+        ]
       },
       "source": {
-        "title": "Open Anatomy Deltoid",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:supraspinatus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "극상근",
+        "en": "Supraspinatus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "supraspinatus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:suprascapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:infraspinatus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "극하근",
+        "en": "Infraspinatus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "infraspinatus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:suprascapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:teres_minor",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "소원근",
+        "en": "Teres minor"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "teres_minor.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:axillary"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:teres_major",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "대원근",
+        "en": "Teres major"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "teres_major.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:lower_subscapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:subscapularis",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "견갑하근",
+        "en": "Subscapularis"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "subscapularis.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:scapula"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:upper_subscapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:trapezius",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "승모근",
+        "en": "Trapezius"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder",
+        "spine"
+      ],
+      "mesh": {
+        "file": "trapezius.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:cervical_1"
+        ],
+        "insertion": [
+          "bone:scapula",
+          "bone:clavicle"
+        ],
+        "innervated_by": [
+          "nerve:accessory"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:latissimus_dorsi",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "광배근",
+        "en": "Latissimus dorsi"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder",
+        "spine"
+      ],
+      "mesh": {
+        "file": "latissimus_dorsi.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:thoracic_1",
+          "bone:lumbar_spine"
+        ],
+        "insertion": [
+          "bone:humerus"
+        ],
+        "innervated_by": [
+          "nerve:thoracodorsal"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:rhomboid_major",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "대능형근",
+        "en": "Rhomboid major"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "rhomboid_major.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:thoracic_1"
+        ],
+        "insertion": [
+          "bone:scapula"
+        ],
+        "innervated_by": [
+          "nerve:dorsal_scapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:rhomboid_minor",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "소능형근",
+        "en": "Rhomboid minor"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "rhomboid_minor.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:cervical_7"
+        ],
+        "insertion": [
+          "bone:scapula"
+        ],
+        "innervated_by": [
+          "nerve:dorsal_scapular"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:serratus_anterior",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": {
+        "ko": "전거근",
+        "en": "Serratus anterior"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "serratus_anterior.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "origin": [
+          "bone:rib_1"
+        ],
+        "insertion": [
+          "bone:scapula"
+        ],
+        "innervated_by": [
+          "nerve:long_thoracic"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:rib_1",
+      "kind": "bone",
+      "layer": "bone",
+      "name": {
+        "ko": "제1늑골",
+        "en": "Rib 1"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "thorax"
+      ],
+      "mesh": {
+        "file": "rib_1.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:thoracic_facets"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -348,13 +2013,28 @@
       "id": "nerve:superior_gluteal",
       "kind": "nerve",
       "layer": "nerve",
-      "name": { "ko": "상둔신경", "en": "Superior gluteal nerve" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip"],
-      "mesh": { "file": "superior_gluteal_nerve.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["muscle:gluteus_medius"] },
+      "name": {
+        "ko": "상둔신경",
+        "en": "Superior gluteal nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "superior_gluteal.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:gluteus_medius"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Superior Gluteal Nerve",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -365,13 +2045,28 @@
       "id": "nerve:inferior_gluteal",
       "kind": "nerve",
       "layer": "nerve",
-      "name": { "ko": "하둔신경", "en": "Inferior gluteal nerve" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip"],
-      "mesh": { "file": "inferior_gluteal_nerve.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["muscle:gluteus_maximus"] },
+      "name": {
+        "ko": "하둔신경",
+        "en": "Inferior gluteal nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "inferior_gluteal.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:gluteus_maximus"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Inferior Gluteal Nerve",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -382,13 +2077,94 @@
       "id": "nerve:femoral",
       "kind": "nerve",
       "layer": "nerve",
-      "name": { "ko": "대퇴신경", "en": "Femoral nerve" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["hip", "thigh"],
-      "mesh": { "file": "femoral_nerve.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["muscle:psoas_major", "muscle:iliacus"] },
+      "name": {
+        "ko": "대퇴신경",
+        "en": "Femoral nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip",
+        "thigh"
+      ],
+      "mesh": {
+        "file": "femoral.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:psoas_major",
+          "muscle:iliacus"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Femoral Nerve",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:obturator",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "폐쇄신경",
+        "en": "Obturator nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "obturator.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:pelvis"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:sciatic",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "좌골신경",
+        "en": "Sciatic nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "sciatic.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:piriformis"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -399,13 +2175,349 @@
       "id": "nerve:axillary",
       "kind": "nerve",
       "layer": "nerve",
-      "name": { "ko": "액와신경", "en": "Axillary nerve" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder"],
-      "mesh": { "file": "axillary_nerve.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["muscle:deltoid"] },
+      "name": {
+        "ko": "액와신경",
+        "en": "Axillary nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "axillary.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:deltoid"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Axillary Nerve",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:suprascapular",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "견갑상신경",
+        "en": "Suprascapular nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "suprascapular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:supraspinatus",
+          "muscle:infraspinatus"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:lumbar_plexus",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "요신경총",
+        "en": "Lumbar plexus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "lumbar_plexus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:lumbar_spine"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:sacral_plexus",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "천골신경총",
+        "en": "Sacral plexus"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "pelvis"
+      ],
+      "mesh": {
+        "file": "sacral_plexus.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:sacrum"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:dorsal_rami",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "뒤가지신경",
+        "en": "Dorsal rami"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "dorsal_rami.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:lumbar_spine"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:upper_subscapular",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "상견갑하신경",
+        "en": "Upper subscapular nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "upper_subscapular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:subscapularis"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:lower_subscapular",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "하견갑하신경",
+        "en": "Lower subscapular nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "lower_subscapular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:teres_major"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:accessory",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "더부신경",
+        "en": "Accessory nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "neck"
+      ],
+      "mesh": {
+        "file": "accessory.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:trapezius"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:thoracodorsal",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "등신경",
+        "en": "Thoracodorsal nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "thoracodorsal.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:latissimus_dorsi"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:dorsal_scapular",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "견갑배신경",
+        "en": "Dorsal scapular nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "dorsal_scapular.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:rhomboid_major"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:long_thoracic",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": {
+        "ko": "긴흉신경",
+        "en": "Long thoracic nerve"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "long_thoracic.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "muscle:serratus_anterior"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -416,13 +2528,28 @@
       "id": "artery:external_iliac",
       "kind": "artery",
       "layer": "artery",
-      "name": { "ko": "외장골동맥", "en": "External iliac artery" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["pelvis"],
-      "mesh": { "file": "external_iliac_artery.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:pelvis"] },
+      "name": {
+        "ko": "외장골동맥",
+        "en": "External iliac artery"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "pelvis"
+      ],
+      "mesh": {
+        "file": "external_iliac.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:pelvis"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy External Iliac Artery",
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",
@@ -433,13 +2560,188 @@
       "id": "artery:subclavian",
       "kind": "artery",
       "layer": "artery",
-      "name": { "ko": "쇄골하동맥", "en": "Subclavian artery" },
-      "aliases": { "ko": [], "en": [] },
-      "tags": ["shoulder"],
-      "mesh": { "file": "subclavian_artery.usdz", "format": "usdz" },
-      "relations": { "adjacent_to": ["bone:scapula"] },
+      "name": {
+        "ko": "쇄골하동맥",
+        "en": "Subclavian artery"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "subclavian.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:clavicle"
+        ]
+      },
       "source": {
-        "title": "Open Anatomy Subclavian Artery",
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "artery:axillary",
+      "kind": "artery",
+      "layer": "artery",
+      "name": {
+        "ko": "액와동맥",
+        "en": "Axillary artery"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "axillary.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:humerus"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "vein:external_iliac",
+      "kind": "vein",
+      "layer": "vein",
+      "name": {
+        "ko": "외장골정맥",
+        "en": "External iliac vein"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "pelvis"
+      ],
+      "mesh": {
+        "file": "external_iliac.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:pelvis"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "vein:subclavian",
+      "kind": "vein",
+      "layer": "vein",
+      "name": {
+        "ko": "쇄골하정맥",
+        "en": "Subclavian vein"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "shoulder"
+      ],
+      "mesh": {
+        "file": "subclavian.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:clavicle"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "ligament:iliofemoral",
+      "kind": "ligament",
+      "layer": "ligament",
+      "name": {
+        "ko": "장골대퇴인대",
+        "en": "Iliofemoral ligament"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "hip"
+      ],
+      "mesh": {
+        "file": "iliofemoral.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "joint:hip"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "ligament:supraspinous",
+      "kind": "ligament",
+      "layer": "ligament",
+      "name": {
+        "ko": "극상인대",
+        "en": "Supraspinous ligament"
+      },
+      "aliases": {
+        "ko": [],
+        "en": []
+      },
+      "tags": [
+        "spine"
+      ],
+      "mesh": {
+        "file": "supraspinous.usdz",
+        "format": "usdz"
+      },
+      "relations": {
+        "adjacent_to": [
+          "bone:lumbar_spine"
+        ]
+      },
+      "source": {
+        "title": "Open Anatomy Reference",
         "project": "OpenAnatomy",
         "license": "CC-BY-4.0",
         "attribution": "OpenAnatomy contributors",

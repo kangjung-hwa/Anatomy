@@ -73,6 +73,9 @@ jobs:
             --schema schema/bundle-data.schema.json \
             --data data/bundles
 
+      - name: Lint anatomy relations
+        run: python scripts/lint_anatomy_relations.py
+
       - name: Upload validation report
         if: always()
         uses: actions/upload-artifact@v4
