@@ -1,0 +1,450 @@
+{
+  "bundle_id": "anatomy_3d_index_v2",
+  "bundle_type": "anatomy_3d_index",
+  "version": "2.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2026-01-07T00:00:00Z",
+  "entities": [
+    {
+      "id": "bone:pelvis",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "골반", "en": "Pelvis" },
+      "aliases": { "ko": ["골반뼈"], "en": ["Pelvic girdle"] },
+      "tags": ["hip", "core"],
+      "mesh": { "file": "pelvis.usdz", "format": "usdz" },
+      "hierarchy": { "children_ids": ["bone:sacrum", "bone:ilium", "bone:ischium", "bone:pubis"] },
+      "relations": { "adjacent_to": ["joint:sacroiliac", "joint:hip"] },
+      "source": {
+        "title": "Open Anatomy Pelvis",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:sacrum",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "천골", "en": "Sacrum" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["spine"],
+      "mesh": { "file": "sacrum.usdz", "format": "usdz" },
+      "hierarchy": { "parent_id": "bone:pelvis" },
+      "relations": { "adjacent_to": ["joint:sacroiliac", "bone:lumbar_spine"] },
+      "source": {
+        "title": "Open Anatomy Sacrum",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:ilium",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "장골", "en": "Ilium" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip"],
+      "mesh": { "file": "ilium.usdz", "format": "usdz" },
+      "hierarchy": { "parent_id": "bone:pelvis" },
+      "relations": { "adjacent_to": ["joint:hip"] },
+      "source": {
+        "title": "Open Anatomy Ilium",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:ischium",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "좌골", "en": "Ischium" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip"],
+      "mesh": { "file": "ischium.usdz", "format": "usdz" },
+      "hierarchy": { "parent_id": "bone:pelvis" },
+      "relations": { "adjacent_to": ["joint:hip"] },
+      "source": {
+        "title": "Open Anatomy Ischium",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:pubis",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "치골", "en": "Pubis" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip"],
+      "mesh": { "file": "pubis.usdz", "format": "usdz" },
+      "hierarchy": { "parent_id": "bone:pelvis" },
+      "relations": { "adjacent_to": ["joint:hip"] },
+      "source": {
+        "title": "Open Anatomy Pubis",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:lumbar_spine",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "요추", "en": "Lumbar Spine" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["spine"],
+      "mesh": { "file": "lumbar_spine.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:sacrum", "joint:lumbar_facets"] },
+      "source": {
+        "title": "Open Anatomy Lumbar Spine",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:hip",
+      "kind": "joint",
+      "layer": "joint",
+      "name": { "ko": "고관절", "en": "Hip Joint" },
+      "aliases": { "ko": ["엉덩관절"], "en": ["Coxal joint"] },
+      "tags": ["hip", "mobility"],
+      "mesh": { "file": "hip_joint.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:ilium", "bone:ischium", "bone:pubis"] },
+      "source": {
+        "title": "Open Anatomy Hip Joint",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:sacroiliac",
+      "kind": "joint",
+      "layer": "joint",
+      "name": { "ko": "천장관절", "en": "Sacroiliac Joint" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["pelvis"],
+      "mesh": { "file": "sacroiliac_joint.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:sacrum", "bone:ilium"] },
+      "source": {
+        "title": "Open Anatomy SI Joint",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "joint:shoulder",
+      "kind": "joint",
+      "layer": "joint",
+      "name": { "ko": "견관절", "en": "Shoulder Joint" },
+      "aliases": { "ko": ["어깨관절"], "en": ["Glenohumeral joint"] },
+      "tags": ["shoulder"],
+      "mesh": { "file": "shoulder_joint.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:scapula", "bone:humerus"] },
+      "source": {
+        "title": "Open Anatomy Shoulder Joint",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:scapula",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "견갑골", "en": "Scapula" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder"],
+      "mesh": { "file": "scapula.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["joint:shoulder"] },
+      "source": {
+        "title": "Open Anatomy Scapula",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "bone:humerus",
+      "kind": "bone",
+      "layer": "bone",
+      "name": { "ko": "상완골", "en": "Humerus" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder", "arm"],
+      "mesh": { "file": "humerus.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["joint:shoulder"] },
+      "source": {
+        "title": "Open Anatomy Humerus",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:gluteus_medius",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "중둔근", "en": "Gluteus medius" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "stability"],
+      "mesh": { "file": "gluteus_medius.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:ilium"],
+        "insertion": ["bone:femur"],
+        "innervated_by": ["nerve:superior_gluteal"]
+      },
+      "source": {
+        "title": "Open Anatomy Gluteus Medius",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:gluteus_maximus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "대둔근", "en": "Gluteus maximus" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "extension"],
+      "mesh": { "file": "gluteus_maximus.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:ilium", "bone:sacrum"],
+        "insertion": ["bone:femur"],
+        "innervated_by": ["nerve:inferior_gluteal"]
+      },
+      "source": {
+        "title": "Open Anatomy Gluteus Maximus",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:psoas_major",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "대요근", "en": "Psoas major" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "flexion"],
+      "mesh": { "file": "psoas_major.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:lumbar_spine"],
+        "insertion": ["bone:femur"],
+        "innervated_by": ["nerve:femoral"]
+      },
+      "source": {
+        "title": "Open Anatomy Psoas Major",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:iliacus",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "장요근(장골근)", "en": "Iliacus" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "flexion"],
+      "mesh": { "file": "iliacus.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:ilium"],
+        "insertion": ["bone:femur"],
+        "innervated_by": ["nerve:femoral"]
+      },
+      "source": {
+        "title": "Open Anatomy Iliacus",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:piriformis",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "이상근", "en": "Piriformis" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "rotation"],
+      "mesh": { "file": "piriformis.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:sacrum"],
+        "insertion": ["bone:femur"],
+        "innervated_by": ["nerve:sacral_plexus"]
+      },
+      "source": {
+        "title": "Open Anatomy Piriformis",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:rotator_cuff",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "회전근개", "en": "Rotator cuff" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder", "stability"],
+      "mesh": { "file": "rotator_cuff.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:scapula"],
+        "insertion": ["bone:humerus"],
+        "innervated_by": ["nerve:suprascapular"]
+      },
+      "source": {
+        "title": "Open Anatomy Rotator Cuff",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "muscle:deltoid",
+      "kind": "muscle",
+      "layer": "muscle",
+      "name": { "ko": "삼각근", "en": "Deltoid" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder", "abduction"],
+      "mesh": { "file": "deltoid.usdz", "format": "usdz" },
+      "relations": {
+        "origin": ["bone:scapula"],
+        "insertion": ["bone:humerus"],
+        "innervated_by": ["nerve:axillary"]
+      },
+      "source": {
+        "title": "Open Anatomy Deltoid",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:superior_gluteal",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": { "ko": "상둔신경", "en": "Superior gluteal nerve" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip"],
+      "mesh": { "file": "superior_gluteal_nerve.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["muscle:gluteus_medius"] },
+      "source": {
+        "title": "Open Anatomy Superior Gluteal Nerve",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:inferior_gluteal",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": { "ko": "하둔신경", "en": "Inferior gluteal nerve" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip"],
+      "mesh": { "file": "inferior_gluteal_nerve.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["muscle:gluteus_maximus"] },
+      "source": {
+        "title": "Open Anatomy Inferior Gluteal Nerve",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:femoral",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": { "ko": "대퇴신경", "en": "Femoral nerve" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["hip", "thigh"],
+      "mesh": { "file": "femoral_nerve.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["muscle:psoas_major", "muscle:iliacus"] },
+      "source": {
+        "title": "Open Anatomy Femoral Nerve",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "nerve:axillary",
+      "kind": "nerve",
+      "layer": "nerve",
+      "name": { "ko": "액와신경", "en": "Axillary nerve" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder"],
+      "mesh": { "file": "axillary_nerve.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["muscle:deltoid"] },
+      "source": {
+        "title": "Open Anatomy Axillary Nerve",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "artery:external_iliac",
+      "kind": "artery",
+      "layer": "artery",
+      "name": { "ko": "외장골동맥", "en": "External iliac artery" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["pelvis"],
+      "mesh": { "file": "external_iliac_artery.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:pelvis"] },
+      "source": {
+        "title": "Open Anatomy External Iliac Artery",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    },
+    {
+      "id": "artery:subclavian",
+      "kind": "artery",
+      "layer": "artery",
+      "name": { "ko": "쇄골하동맥", "en": "Subclavian artery" },
+      "aliases": { "ko": [], "en": [] },
+      "tags": ["shoulder"],
+      "mesh": { "file": "subclavian_artery.usdz", "format": "usdz" },
+      "relations": { "adjacent_to": ["bone:scapula"] },
+      "source": {
+        "title": "Open Anatomy Subclavian Artery",
+        "project": "OpenAnatomy",
+        "license": "CC-BY-4.0",
+        "attribution": "OpenAnatomy contributors",
+        "url": "https://openanatomy.org"
+      }
+    }
+  ]
+}

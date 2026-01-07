@@ -2,9 +2,10 @@ import SwiftUI
 
 struct FavoritesView: View {
     @EnvironmentObject private var favoritesStore: FavoritesStore
-    let entities: [AnatomyEntity]
+    let entities: [Anatomy3DEntity]
+    @State private var selectedEntity: Anatomy3DEntity?
 
-    private var favoriteEntities: [AnatomyEntity] {
+    private var favoriteEntities: [Anatomy3DEntity] {
         entities.filter { favoritesStore.contains($0.id) }
     }
 
@@ -14,9 +15,8 @@ struct FavoritesView: View {
                 ContentUnavailableView("즐겨찾기 없음", systemImage: "star")
             } else {
                 List(favoriteEntities, id: \.id) { entity in
-                    NavigationLink {
-                        EntityDetailView(entity: entity)
-                            .environmentObject(favoritesStore)
+                    Button {
+                        selectedEntity = entity
                     } label: {
                         VStack(alignment: .leading) {
                             Text(entity.name.ko)
@@ -29,5 +29,41 @@ struct FavoritesView: View {
             }
         }
         .navigationTitle("Favorites")
+        .sheet(item: $selectedEntity) { entity in
+            FavoriteViewerSheet(entity: entity)
+                .environmentObject(favoritesStore)
+        }
+    }
+}
+
+private struct FavoriteViewerSheet: View {
+    @EnvironmentObject private var favoritesStore: FavoritesStore
+    let entity: Anatomy3DEntity
+
+    var body: some View {
+        NavigationStack {
+            VStack(spacing: 16) {
+                Viewer3DThumbnail(entity: entity)
+                EntityDetailSheet(entity: entity, notes: [])
+            }
+            .navigationTitle("3D Viewer")
+            .toolbar {
+                Button {
+                    favoritesStore.toggle(entity.id)
+                } label: {
+                    Image(systemName: favoritesStore.contains(entity.id) ? "star.fill" : "star")
+                }
+            }
+        }
+    }
+}
+
+private struct Viewer3DThumbnail: View {
+    let entity: Anatomy3DEntity
+
+    var body: some View {
+        Viewer3DViewPlaceholder(entity: entity)
+            .frame(height: 220)
+            .padding(.horizontal)
     }
 }

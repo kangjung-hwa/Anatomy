@@ -7,6 +7,11 @@ enum AnatomyKind: String, Codable, CaseIterable {
     case joint
     case ligament
     case vessel
+    case artery
+    case vein
+    case organ
+    case skin
+    case fascia
 }
 
 enum AnatomyRegion: String, Codable, CaseIterable {

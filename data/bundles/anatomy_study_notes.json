@@ -1,0 +1,89 @@
+{
+  "bundle_id": "anatomy_study_notes_v2",
+  "bundle_type": "anatomy_study_notes",
+  "version": "2.0.0",
+  "locale": "ko-KR",
+  "generated_at": "2026-01-07T00:00:00Z",
+  "notes": [
+    {
+      "id": "note:gluteus_medius",
+      "key_entity_id": "muscle:gluteus_medius",
+      "summary_ko": "중둔근은 골반의 측면 안정성을 담당하는 핵심 근육이다.",
+      "yoga_relevance_ko": "균형 자세(나무 자세)에서 골반이 무너지지 않도록 지지한다.",
+      "cues_ko": "발바닥을 눌러 바깥 엉덩이를 단단히 잡는다.",
+      "common_mistakes_ko": "엉덩이를 한쪽으로 밀어 체중을 걸고 지지 근육을 쓰지 않는 경우가 많다.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "11.9"
+        }
+      ]
+    },
+    {
+      "id": "note:psoas_major",
+      "key_entity_id": "muscle:psoas_major",
+      "summary_ko": "대요근은 고관절 굴곡과 요추 안정성에 관여한다.",
+      "yoga_relevance_ko": "힙 플렉서가 짧으면 전굴에서 허리가 과신전될 수 있다.",
+      "cues_ko": "골반을 길게 유지하며 허리 앞쪽을 부드럽게 확장한다.",
+      "common_mistakes_ko": "허벅지만 들어 올리고 복부 지지가 없는 경우.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "11.8"
+        }
+      ]
+    },
+    {
+      "id": "note:hip_joint",
+      "key_entity_id": "joint:hip",
+      "summary_ko": "고관절은 체중을 지지하며 큰 가동성을 제공한다.",
+      "yoga_relevance_ko": "좌전굴, 개구리 자세에서 가동성과 안정성의 균형이 중요하다.",
+      "cues_ko": "무릎보다 고관절에서 접히는 느낌을 유지한다.",
+      "common_mistakes_ko": "허리로만 접히며 고관절 움직임이 제한되는 경우.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9.4"
+        }
+      ]
+    },
+    {
+      "id": "note:shoulder_joint",
+      "key_entity_id": "joint:shoulder",
+      "summary_ko": "견관절은 상완의 전방/외측 움직임을 허용한다.",
+      "yoga_relevance_ko": "다운독에서 어깨 안정과 회전근개 사용이 핵심이다.",
+      "cues_ko": "견갑골을 넓게 펼쳐 팔을 지지한다.",
+      "common_mistakes_ko": "어깨를 귀 쪽으로 끌어올려 회전근개 부담을 증가시킴.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "9.2"
+        }
+      ]
+    },
+    {
+      "id": "note:deltoid",
+      "key_entity_id": "muscle:deltoid",
+      "summary_ko": "삼각근은 어깨 외전과 팔의 안정에 기여한다.",
+      "yoga_relevance_ko": "플랭크에서 팔을 지지하는 근육군 중 하나다.",
+      "cues_ko": "팔을 바닥에 밀어 어깨를 넓게 펼친다.",
+      "common_mistakes_ko": "견갑 안정 없이 삼각근만 과사용하는 경우.",
+      "sources": [
+        {
+          "title": "OpenStax Anatomy & Physiology",
+          "license": "CC-BY-4.0",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology",
+          "section": "11.6"
+        }
+      ]
+    }
+  ]
+}

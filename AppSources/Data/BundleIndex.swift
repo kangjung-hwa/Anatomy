@@ -19,13 +19,19 @@ struct AnatomyBundle: Codable, Hashable {
 }
 
 struct BundleIndex: Hashable {
-    let bundles: [AnatomyBundle]
+    let legacyBundles: [AnatomyBundle]
+    let indexEntities: [Anatomy3DEntity]
+    let studyNotes: [StudyNote]
 
     var allEntities: [AnatomyEntity] {
-        bundles.flatMap(\.entities)
+        legacyBundles.flatMap(\.entities)
     }
 
     var groupedByKind: [AnatomyKind: [AnatomyEntity]] {
         Dictionary(grouping: allEntities, by: \.kind)
+    }
+
+    var notesByEntityId: [String: [StudyNote]] {
+        Dictionary(grouping: studyNotes, by: \.keyEntityId)
     }
 }

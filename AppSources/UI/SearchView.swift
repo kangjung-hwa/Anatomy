@@ -3,17 +3,18 @@ import SwiftUI
 struct SearchView: View {
     @EnvironmentObject private var favoritesStore: FavoritesStore
     @State private var query = ""
-    let entities: [AnatomyEntity]
+    let entities: [Anatomy3DEntity]
+    let notesByEntityId: [String: [StudyNote]]
 
-    private var results: [AnatomyEntity] {
-        SearchIndex(entities: entities).search(query: query)
+    private var results: [Anatomy3DEntity] {
+        SearchIndex(entities: [], entities3D: entities).search3D(query: query)
     }
 
     var body: some View {
         NavigationStack {
             List(results, id: \.id) { entity in
                 NavigationLink {
-                    EntityDetailView(entity: entity)
+                    EntityDetailSheet(entity: entity, notes: notesByEntityId[entity.id] ?? [])
                         .environmentObject(favoritesStore)
                 } label: {
                     VStack(alignment: .leading) {
