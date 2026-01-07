@@ -40,7 +40,7 @@
           "format": "date-time"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": true
     },
     "anatomy_entities_bundle": {
       "allOf": [
