@@ -18,6 +18,7 @@
    python scripts/validate_bundle_data.py --schema schema/bundle-data.schema.json --data data/bundles
    ```
 3. CI writes results to `bundle-validation-report.txt` and publishes it as an artifact.
+4. Bundles are stored in `data/bundles/*.json` using the anatomy entity schema (see `data/bundles/upper_limb_muscles.json`).
 
 ## Notes for deployment
 - Configure these repository secrets before running the TestFlight workflow:
