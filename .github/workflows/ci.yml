@@ -1,0 +1,82 @@
+name: iOS CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - work
+
+jobs:
+  xcode-tests:
+    name: xcodebuild test
+    runs-on: macos-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      XCODE_WORKSPACE: ${{ vars.XCODE_WORKSPACE || 'Anatomy.xcworkspace' }}
+      XCODE_PROJECT: ${{ vars.XCODE_PROJECT || 'Anatomy.xcodeproj' }}
+      XCODE_SCHEME: ${{ vars.XCODE_SCHEME || 'Anatomy' }}
+      XCODE_DESTINATION: ${{ vars.XCODE_DESTINATION || 'platform=iOS Simulator,name=iPhone 15' }}
+      DERIVED_DATA_PATH: ${{ github.workspace }}/DerivedData
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Install xcpretty
+        run: sudo gem install xcpretty --no-document
+
+      - name: Build and test
+        run: |
+          set -euo pipefail
+          if [[ -n "${XCODE_WORKSPACE}" && -f "${XCODE_WORKSPACE}" ]]; then
+            PROJECT_FLAG=(-workspace "${XCODE_WORKSPACE}")
+          elif [[ -n "${XCODE_PROJECT}" && -f "${XCODE_PROJECT}" ]]; then
+            PROJECT_FLAG=(-project "${XCODE_PROJECT}")
+          else
+            echo "::notice ::No Xcode workspace or project found. Skipping xcodebuild test."
+            exit 0
+          fi
+
+          xcodebuild \
+            "${PROJECT_FLAG[@]}" \
+            -scheme "${XCODE_SCHEME}" \
+            -destination "${XCODE_DESTINATION}" \
+            -derivedDataPath "${DERIVED_DATA_PATH}" \
+            clean test | xcpretty
+
+  bundle-data-lint:
+    name: Bundle data lint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+
+      - name: Validate bundle data
+        run: |
+          python scripts/validate_bundle_data.py \
+            --schema schema/bundle-data.schema.json \
+            --data data/bundles
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bundle-data-validation
+          path: bundle-validation-report.txt
+          if-no-files-found: ignore
